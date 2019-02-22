@@ -1,0 +1,7 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/3f98e6ac-9961-4293-9b7e-1a2405a1ea8c/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/express-blog-todd",
+  "appService.deploySubpath": ""
+}

@@ -1,3 +1,32 @@
 extends layout
 
 block content
+  .article
+    h1 New Year, New Me
+    p.date February 19, 2019
+    p.body 
+      | It's already February but it's never too late to kick in another year's resolution and start writing again. I've been busy at the day job 
+      | trying to wrap up the first phase of a Xamarin.iOS app and get that puppy up in the app store. At home I've been really busy trying to keep up
+      | with my 1 year old... but enough with the excuses. In my free time I have been learning Ruby on Rails this year as my new language / framework and would 
+      | like to journal my progress to help solidify the new learnings and keep me focused on the goal. This past weekend I  
+      | thought, "This is going to be awesome! I'm going to spin a blog up with Gatsby, no wait maybe Hugo will be ... no wait maybe I'll use Hexo again ...
+      | After hitting roadblock after roadblock, and feeling the frustration of not being able to quickly accomplish what I wanted to in the limited free time
+      | I have, I decided to pull the plug, go old school and serve up some plain ol' HTML and CSS with Express and call it a day. I wanted to deploy
+      | this asap, keep it simple, and solve problems I have as I encounter them. I tried out this 
+      a(href="https://code.visualstudio.com/tutorials/app-service-extension/getting-started") Azure App Service tutorial 
+      | and couldn't be happier with the speed of deployment. I had already npm installed express generator 
+      span.code npm i -g express-generator
+      |    
+      | to create my app skeleton so all I had to do was install the Azure App Service extension within VS Code and my site was live in no time. 
+      | The only downside to this was that it broke me out of VIM and iTerm which has been another focus of mine for 2019. It wasn't that big of a deal to run the command 
+      span.code code .
+      | 
+      | in the terminal to quickly have the project opened in VSCode and then I was two clicks away from deployment. I hope this workflow will save me more brain cycles to learn Rails and spend less time 
+      | configuring the latest hip blogging tool. The next step will be to figure out how to deploy to 
+      | Azure from the command line so I don't need to leave iTerm between my development and deployment.
+    p.body
+      | I am very fortunate to have a 
+      a(href='https://twitter.com/coxandrew') dear friend, and Rails guru
+      |, mentoring me through this process and they have me working through the 
+      a(href='https://www.railstutorial.org/book') Ruby on Rails Tutorial by Michael Hartl
+      |. I will dive into my progress with the Hartl in my next post.

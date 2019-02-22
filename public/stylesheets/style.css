@@ -174,7 +174,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +185,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -193,9 +195,9 @@ select { /* 1 */
  */
 
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -204,9 +206,9 @@ button,
  */
 
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -216,9 +218,9 @@ button::-moz-focus-inner,
  */
 
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -267,8 +269,8 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -277,8 +279,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -287,7 +289,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -296,7 +298,7 @@ textarea {
  * Remove the inner padding in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -353,41 +355,25 @@ html {
 }
 body {
   background: #494f5c;
-  font-family: "trebuchet ms", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'trebuchet ms', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
   color: #c6cddb;
 }
 
 nav {
   background: #3b3e48;
   padding: 1rem 0;
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.45);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.45);
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul a {
+nav a {
   color: #c6cddb;
   text-decoration: none;
-}
-
-ul.main { 
-  display: flex;
-  margin: 0;
-}
-
-ul.main a {
-  padding: 0 2rem;
   font-size: 1.5rem;
-}
-
-nav ul li {
-  margin-left: 1rem;
-}
-
-nav ul li svg {
-  padding-top: 0.2rem;
+  vertical-align: middle;
 }
 
 a {
@@ -397,8 +383,26 @@ a {
   transition-timing-function: ease-out;
 }
 
+.nav-items {
+  display: block;
+  max-width: 730px;
+  margin: auto;
+}
+
 a:hover {
   color: #fff;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 1rem;
+  padding-top: 0.4rem;
+}
+
+.blog-title {
+  padding-bottom: 4px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 svg {
@@ -409,4 +413,56 @@ svg {
 
 svg:hover {
   color: #fff;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  max-width: 690px;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 40px);
+}
+
+.date {
+  color: #949aa8;
+}
+
+.body {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.body a {
+  color: #fff;
+}
+
+.body a:hover {
+  color: #fa82dc;
+}
+
+span.code {
+  color: #494f5c;
+  background: rgba(221, 221, 221, 0.8);
+  border-radius: 4px;
+  border: 1px solid #333;
+  padding: 0 2px 2px 4px;
+  margin-right: 2px;
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  font-size: 15px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @media {
+    .social-icon {
+      /* display: inline-block;
+    margin-left: 1rem; */
+      padding-top: 0.4rem;
+    }
+  }
 }
